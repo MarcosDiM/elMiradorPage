@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Marcellus SC", serif;
+    font-style: normal;
+    background-color: #97796B;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+    display: block;
+    height:100px;
+}
+
+.img-header{
+    width: 100%;
+    z-index: 1;
+}
+
+.title{
+    margin: 5vh 0% 0% 1vw;
+}
+
+.title img{
+    height: 280px;
+    width: auto;
+}
+
+.nav-inicio {
+    padding: 0 12%;
+    margin: 0 ;
+    background-color: #7B5C4E; 
+    display: flex; 
+    justify-content:space-evenly; 
+}
+
+.button-nav{
+    margin: 1.5% 0%;
+    font-size: 0.8rem;
+    height: 2.8rem;
+    width: 10rem;
+    border: solid 1px  ;
+    border-radius: 1rem;
+    background-color: #E6D3A5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.button-nav:hover {
+    cursor: pointer;
+    transform: scale(1.05); 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.8); /
+}
