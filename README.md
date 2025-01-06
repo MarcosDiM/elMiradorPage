@@ -14,10 +14,10 @@ COLORES:
 #FFFFFF
 
 #000000
+rgba(230, 211, 165, 0.5)
+#E6D3A5 Opacidad 50% 
 
-#E6D3A5
-
-#97796B
+#97796B Opacidad 50% rgba(151, 121, 107, 0.5)
 
 #1E1E1E
 
