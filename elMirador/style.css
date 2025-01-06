@@ -7,6 +7,10 @@
     /* background-color: #97796B; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ------------ HEADER --------------*/
 
 .header{
@@ -36,31 +40,44 @@
 }
 
 .nav-inicio {
+    
     padding: 0 12%;
     margin: 0 ;
     background-color: #7B5C4E; 
-    display: flex; 
-    justify-content:space-evenly; 
     position: relative;
     z-index: 2;
 }
 
+.nav-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .svg-nav-top{
     position: absolute;
-    bottom: 5vh;
+    bottom: 3vh;
+    left: 0vw;
     z-index: 1;
 }
 
 .svg-nav-bottom{
     position: absolute;
-    top: 5vh;
+    top: 3vh;
+    left: 0vw;
     z-index: 1;
 }
 
+.nav-inicio a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .button-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0% 2%;
     font-size: 1.1rem;
-
     height: 7vh;
     width: 14vw;
     border: solid 1px  ;
@@ -78,6 +95,31 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.8); 
 }
 
+/*------ nav scrolled ------*/
+
+.nav-inicio.scrolled {
+    transition: all 0.5s ease ;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(151, 121, 107, 0.7);
+    top: 0;
+    z-index: 3;
+    height: 8vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); 
+    
+}
+
+
+.nav-inicio.scrolled ul li{
+    transition: all 0.5s ease;
+    font-size: 2vh;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 4.5vh;
+    width: 11vw;
+    border-radius: .5rem;
+    margin-top: 1.8vh;
+    
+}
 
 
 /* ---------------- INICIO -------------------*/
@@ -91,7 +133,7 @@
 
 .titulo-inicio{
     width: auto;
-    padding: 3vh;
+    padding: 2vh;
     background-image: url(/images/silueta-inicio.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -109,16 +151,18 @@
 
 .texto-inicio{
     color: white;
-    font-size: 2.5vh;
+    font-size: 17px;
     display: grid;
     align-items: center;
+    padding-right: 5vw;
 
 }
 
 .img-inicio img{
     height: 60vh;
     width: auto;
-    padding-left: 5vw;
+    border-radius: .6rem;
+    box-shadow: 15px 15px 0px 0px rgba(230, 211, 165, 0.5); 
 }
 
 
@@ -130,16 +174,88 @@
 }
 
 .objetos-inicio li{
-    font-size: 1.8vh;
+    font-size: 14px;
     height: auto;
     background-color: rgba(230, 211, 165, 0.5);
     border-radius: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2% 3%;
+    padding: 2vh 2vw;
+    margin-bottom: 20vh;
 }
 
 .objetos-inicio li span{
     padding: 0 20px 0 0;
+}
+
+
+/* ---------------- SECTION COMPLEJO -------------------*/
+
+.complejo{
+    background-color: #7B5C4E;
+    position: relative; 
+}
+
+.header-comlejo {
+    z-index: 1; 
+}
+
+.titulo-complejo {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 5vh;
+    position: relative;
+    z-index: 2; 
+    
+}
+
+.svg-complejo-top{
+    position: absolute;
+    width: 100%;
+    top: -27vh;
+    
+}
+
+.texto-complejo{
+    color: white;
+    margin: 8vh 15vw 0vh 15vw;
+    font-size: 17px;
+    position: relative;
+    z-index: 2;
+}
+
+.texto-complejo p{
+    padding-top: 3vh;
+}
+
+.svg-complejo-buttom{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.objetos-complejo{
+    margin: 10vh 15vw -1vh 15vw;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.objetos-complejo li{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0vh 1vw 4vh 1vw;
+    padding: 1vh 2vw 1vh 2vw;
+    background-color: rgba(230, 211, 165, 0.5);
+    border-radius: .8rem;
+}
+
+.objetos-complejo li span {
+    padding-right: 1vw;
 }
